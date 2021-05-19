@@ -16,7 +16,11 @@ neatMenu(menu)
 # Anything else you want to add 
 def tip(total):
     # percentage / 100 = decimal
-    print("The recommended tip is", 15 / 100 * total)
+    for tip_percent in range(9, 19, 3):
+        # string interpolation
+        print(f"A {tip_percent}% tip is ${tip_percent / 100 * total}")
+    # 9, 12, 15, 18 ==> range(9, 19, 3)
+    # A 12% tip is:
 
 def tax(sub_total):
     eightpercent = 8 / 100 * sub_total
